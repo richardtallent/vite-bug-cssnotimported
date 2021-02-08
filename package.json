@@ -1,0 +1,28 @@
+{
+	"name": "vite-bug-cssnotimported",
+	"version": "0.0.0",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/vite-bug-cssnotimported.umd.js",
+	"module": "./dist/vite-bug-cssnotimported.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/vite-bug-cssnotimported.es.js",
+			"require": "./dist/vite-bug-cssnotimported.umd.js"
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"dependencies": {
+		"vue": "^3.0.5"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^1.1.4",
+		"@vue/compiler-sfc": "^3.0.5",
+		"vite": "^2.0.0-beta.65"
+	}
+}
